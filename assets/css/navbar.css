@@ -75,10 +75,12 @@ header{
 
   /* Mobile Menu (Hidden by Default) */
   .nav-menu-mobile {
+    height: 313px;
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 80px;
+    justify-content: center;
+    top: 130px;
     left: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.95);

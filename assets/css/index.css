@@ -94,7 +94,7 @@ img {
   margin-top: 5px;
 }
 
-button {
+.third-section > .testimonial-container > button {
   background: none;
   border: none;
   font-size: 30px;
