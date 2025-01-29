@@ -41,11 +41,17 @@ img {
 
 .second-section p {
   font-size: large;
+  font-weight: 700;
 }
 
 .third-section {
   background-color: black;
   color: white;
+}
+
+.third-section i {
+  color: gold;
+  font-size: 20px;
 }
 
 @media (min-width: 768px) {
