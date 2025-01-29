@@ -1,0 +1,31 @@
+.cta {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+}
+
+.cta > a > button {
+    height: 30px;
+    border-radius: 30px;
+    margin: 10px;
+    color: white;
+    border-color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.cta > a > button:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (min-width: 768px) {
+    .cta > a button {
+        font-size: 20px;
+        margin: 16px;
+    }
+
+    .cta > p {
+      font-size: 20px;
+    }
+}

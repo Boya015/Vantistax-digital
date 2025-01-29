@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.hero-banner {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.first-section {
+  background-color: #6482ad;
+}
+
+.first-section h2 {
+  color: white;
+}
+
+.first-section p {
+  color: rgb(255, 255, 255);
+  font-size: large;
+  line-height: 30px;
+}
+
+img {
+  height: 350px;
+}
+
+.text {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.second-section {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #333;
+}
+
+.second-section i {
+  font-size: 40px; /* Adjust size */
+  color: #007bff; /* Change color to match your brand */
+  margin-bottom: 10px;
+  display: block;
+}
+
+.second-section p {
+  font-size: large;
+}
+
+.third-section {
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .hero-banner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-banner > .text {
+    align-content: center;
+  }
+
+  .hero-banner {
+    padding-left: 30px;
+  }
+
+  .hero-banner > .text > h1 {
+    font-size: 50px;
+    padding-right: 150px;
+  }
+
+  .hero-banner > .logo-image {
+    height: 700px;
+  }
+
+  img {
+    height: 350px;
+  }
+
+  .first-section {
+    display: flex;
+    padding: 80px;
+  }
+
+  .first-section p {
+    font-size: 20px;
+  }
+
+  .text-section {
+    margin-left: 50px;
+    margin-top: 38px;
+    margin-right: 50px;
+  }
+
+  .second-section {
+    display: flex;
+    padding: 100px;
+    text-align: center;
+  }
+
+  .second-section > p {
+    font-size: 20px;
+  }
+
+  .third-section {
+    padding: 100px 300px;
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .hero-banner > .text {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .hero-banner h1 {
+    padding: 20px;
+  }
+
+  .hero-banner > h2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hero-banner > .logo-image {
+    height: 350px;
+  }
+
+  .first-section {
+    text-align: center;
+    padding: 50px;
+  }
+
+  img {
+    height: 145px;
+  }
+
+  .second-section {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .third-section {
+    text-align: center;
+    padding: 40px;
+    line-height: 30px;
+  }
+}
