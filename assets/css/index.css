@@ -105,6 +105,10 @@ img {
     text-align: center;
     font-size: 20px;
   }
+
+  .third-section > p {
+    line-height: 40px;
+  }
 }
 
 @media (max-width: 768px) {
