@@ -19,6 +19,16 @@
     color: black;
 }
 
+@media (max-width: 768px) {
+    .cta > a button {
+        font-size: 15px;
+    }
+
+    .cta > p {
+        font-size: 15px;
+      }
+}
+
 @media (min-width: 768px) {
     .cta > a button {
         font-size: 20px;

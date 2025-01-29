@@ -45,8 +45,10 @@ img {
 }
 
 .third-section {
-  background-color: black;
+  text-align: center;
+  background: black;
   color: white;
+  padding: 30px 20px;
 }
 
 .third-section i {
@@ -58,25 +60,46 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  text-align: center;
 }
 
-button {
-  background: transparent;
-  border: none;
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
+.testimonial-content {
+  max-width: 600px;
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 10px auto;
+  display: block;
+}
+
+/* Styling for fade-in animation */
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Initial state (hidden) */
+.fade {
+  
+  transform: translateY(10px);
 }
 
 .stars {
   color: gold;
   font-size: 20px;
+  margin-top: 5px;
 }
 
-.testimonial {
-  max-width: 500px;
-  transition: opacity 0.5s ease-in-out;
+button {
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -94,8 +117,8 @@ button {
   }
 
   .hero-banner > .text > h1 {
-    font-size: 50px;
-    padding-right: 150px;
+    font-size: 42px;
+    padding-right: 120px;
   }
 
   .hero-banner > .logo-image {

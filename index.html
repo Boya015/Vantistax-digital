@@ -34,7 +34,7 @@
         </nav>
         <!-- Hamburger Menu Icon -->
         <div class="hamburger-menu" onclick="toggleMobileMenu()">
-          <i class="fas fa-bars"></i>
+          <i id="menuIcon" class="fas fa-bars"></i>
         </div>
 
         <!-- Mobile Menu -->
@@ -108,23 +108,16 @@
 
     <div class="third-section">
       <div class="testimonial-container">
-        <button id="prevBtn"><i class="fas fa-arrow-left"></i></button>
+        <button id="prevBtn">&#10094;</button>
     
-        <div class="testimonial">
-          <p class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </p>
-          <p class="testimonial-text">
-            "Vantistax Digital transformed my business website! Their team is highly professional, and the design exceeded my expectations."
-          </p>
-          <p class="author">- John Doe, Small Business Owner</p>
+        <div class="testimonial-content">
+          <img class="testimonial-img fade" src="https://randomuser.me/api/portraits/men/1.jpg" alt="Testimonial Person">
+          <p class="testimonial-text fade">"Vantistax Digital transformed my business website! Their team is highly professional, and the design exceeded my expectations."</p>
+          <p class="author fade">- John Doe, Small Business Owner</p>
+          <div class="stars fade"></div>
         </div>
     
-        <button id="nextBtn"><i class="fas fa-arrow-right"></i></button>
+        <button id="nextBtn">&#10095;</button>
       </div>
     </div>
 
