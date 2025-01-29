@@ -52,5 +52,6 @@ nav ol {
 
   nav ol {
     justify-content: center;
+    font-size: small;
   }
 }
