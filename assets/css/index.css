@@ -54,6 +54,31 @@ img {
   font-size: 20px;
 }
 
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.stars {
+  color: gold;
+  font-size: 20px;
+}
+
+.testimonial {
+  max-width: 500px;
+  transition: opacity 0.5s ease-in-out;
+}
+
 @media (min-width: 768px) {
   .hero-banner {
     display: flex;
