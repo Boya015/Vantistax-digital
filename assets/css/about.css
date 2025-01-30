@@ -13,6 +13,24 @@
     color: white;
 }
 
+.first-section {
+  background-color: rgba(255, 255, 255, 0.95);
+  font-weight: 700;
+  color: #333;
+}
+
+.second-section {
+  background-color: #6482ad;
+}
+
+.second-section h2 {
+color: #333;
+}
+
+.second-section ul {
+  font-weight: 700;
+  color:#333;
+}
 nav ol {
     list-style: none;
     padding: 0;
@@ -20,8 +38,15 @@ nav ol {
     display: flex;
   }
   
-  nav ol li {
+  .hero-banner > ol > li {
     margin-right: 10px;
+  }
+
+  ul li {
+  list-style: none; /* Removes bullet points */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  text-align: center;
   }
   
   nav ol li a {
@@ -53,5 +78,52 @@ nav ol {
   nav ol {
     justify-content: center;
     font-size: small;
+  } 
+
+  .first-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first-section p {
+    padding: 50px 40px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+  }
+
+ .first-section img {
+    padding: 50px 50px;
+    height: 170px;
+  }
+
+  .second-section {
+    padding: 20px 80px;
+  }
+
+  .second-section img {
+    height: 200px;
+    border-radius: 10px;
+  }
+
+  .image-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .second-section ul {
+    padding: 0;
+    line-height: 30px;
+  }
+
+  .third-section {
+    text-align: center;
+    line-height: 35px;
+    padding: 50px 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    font-weight: 700;
+    color: #333;
   }
 }
