@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Russo+One&display=swap");
+
+.hero-banner {
+  background-image: url(/assets/img/Banner.webp);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.hero-banner > h2 {
+  font-family: "Josefin Sans", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+}
+
+nav ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.hero-banner > ol > li {
+  margin-right: 10px;
+}
+
+ul li {
+  list-style: none; /* Removes bullet points */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  text-align: center;
+}
+
+nav ol li a {
+  font-family: "Russo One", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: rgb(151, 145, 145);
+}
+
+nav ol li::after {
+  content: "/";
+  margin-left: 10px;
+}
+
+nav ol li:last-child::after {
+  content: ""; /* Remove the arrow from the last breadcrumb */
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container h2 {
+text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .hero-banner {
+    padding: 100px;
+  }
+
+  .hero-banner > h2 {
+    font-size: 40px;
+  }
+
+  .hero-banner nav {
+    position: absolute;
+    top: 375px;
+    right: 133px; /* Adjust spacing from the right */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    padding: 30px;
+    text-align: center;
+  }
+
+  nav ol {
+    justify-content: center;
+    font-size: small;
+  }
+}
