@@ -3,6 +3,40 @@
   background-color: rgba(255, 255, 255, 0.95);
 }
 
+.logo-image {
+  opacity: 0;
+  transform: translateX(-100px); /* Start from left */
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.text {
+  opacity: 0;
+  transform: translateX(100px); /* Start from right */
+  animation: slideInRight 1s ease-out forwards 0.5s; /* Delay for text */
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .first-section {
   background-color: #6482ad;
 }
@@ -25,6 +59,69 @@ img {
   font-family: "Roboto", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.text-section {
+  opacity: 0;
+  transform: translateX(-100px); /* Start from left */
+  animation: slideInLeft 2s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.first-section img {
+  opacity: 0;
+  transform: translateX(100px); /* Start from right */
+  animation: slideInRight 2s ease-out forwards 0.5s; /* Delay for image */
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.second-section > div {
+  opacity: 0;
+  transform: translateY(50px); /* Start 50px below */
+  animation: slideUp 1s ease-out forwards;
+}
+
+.second-section > .our-goal {
+  animation-delay: 3.2s; /* Delay for staggered effect */
+}
+
+.second-section > .our-mission {
+  animation-delay: 3.4s; /* Delay for staggered effect */
+}
+
+.second-section > .our-vision {
+  animation-delay: 3.6s; /* Delay for staggered effect */
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .second-section {

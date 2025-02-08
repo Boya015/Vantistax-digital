@@ -72,6 +72,14 @@ nav ol li:last-child::after {
   text-align: center;
   border: solid 2px #ddd;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-box:hover {
+  transform: scale(1.1); /* Zoom-in effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .service-box img {
@@ -88,7 +96,7 @@ nav ol li:last-child::after {
 
 .service-box p {
     color: #333;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .second-section {

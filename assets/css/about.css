@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Russo+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Russo+One&display=swap");
 .hero-banner {
   background-image: url(/assets/img/Banner.webp);
   background-size: cover;
@@ -7,10 +7,10 @@
 }
 
 .hero-banner > h2 {
-    font-family: "Josefin Sans", serif;
-    font-weight: 700;
-    font-style: normal;
-    color: white;
+  font-family: "Josefin Sans", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
 }
 
 .first-section {
@@ -19,12 +19,46 @@
   color: #333;
 }
 
+.first-section p {
+  opacity: 0; /* Initially hidden */
+  transform: translateX(-100px); /* Move text 100px to the left */
+  animation: slideIn 1s ease-in-out forwards;
+}
+
+.first-section img {
+  opacity: 0; /* Initially hidden */
+  transform: translateX(-100px); /* Move text 100px to the left */
+  animation: slideRight 1s ease-in-out forwards;
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .second-section {
   background-color: #6482ad;
 }
 
 .second-section h2 {
-color: white;
+  color: white;
 }
 
 .second-section ul {
@@ -32,46 +66,96 @@ color: white;
   color: whitesmoke;
 }
 nav ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  .hero-banner > ol > li {
-    margin-right: 10px;
-  }
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
 
-  ul li {
+.hero-banner > ol > li {
+  margin-right: 10px;
+}
+
+ul li {
   list-style: none; /* Removes bullet points */
   padding: 0; /* Removes default padding */
   margin: 0; /* Removes default margin */
   text-align: center;
-  }
-  
-  nav ol li a {
-    font-family: "Russo One", serif;
+}
+
+nav ol li a {
+  font-family: "Russo One", serif;
   font-weight: 400;
   font-style: normal;
-    text-decoration: none;
-    color: rgb(151, 145, 145);
-  }
-  
-  nav ol li::after {
-    content: '/';
-    margin-left: 10px;
-  }
-  
-  nav ol li:last-child::after {
-    content: ''; /* Remove the arrow from the last breadcrumb */
-  }
+  text-decoration: none;
+  color: rgb(151, 145, 145);
+}
 
-  .third-section {
-    border-bottom: solid 2px #ddd;
+nav ol li::after {
+  content: "/";
+  margin-left: 10px;
+}
+
+nav ol li:last-child::after {
+  content: ""; /* Remove the arrow from the last breadcrumb */
+}
+
+.image-text {
+  opacity: 0;
+  transform: translateX(-100px); /* Move left */
+  animation: slideInLeft 2s ease-in-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
   }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.second-section ul {
+  opacity: 0;
+  transform: translateX(100px); /* Move right */
+  animation: slideInRight 2s ease-in-out forwards 0.5s; /* 0.5s delay */
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.third-section {
+  border-bottom: solid 2px #ddd;
+}
+
+.third-section p {
+  opacity: 0;
+  transform: translateY(50px); /* Move down */
+  animation: slideUp 3s ease-in-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @media (min-width: 768px) {
-
   .hero-banner {
     padding: 100px;
   }
@@ -83,7 +167,7 @@ nav ol {
   .hero-banner nav {
     position: absolute;
     top: 375px;
-    right: 133px;/* Adjust spacing from the right */
+    right: 133px; /* Adjust spacing from the right */
   }
 
   .first-section {
@@ -136,14 +220,14 @@ nav ol {
 
 @media (max-width: 768px) {
   .hero-banner {
-    padding: 30px ;
+    padding: 30px;
     text-align: center;
   }
 
   nav ol {
     justify-content: center;
     font-size: small;
-  } 
+  }
 
   .first-section {
     display: flex;
@@ -157,7 +241,7 @@ nav ol {
     margin: 0;
   }
 
- .first-section img {
+  .first-section img {
     padding: 50px 50px;
     height: 170px;
   }
