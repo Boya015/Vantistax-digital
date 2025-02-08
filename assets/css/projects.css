@@ -72,6 +72,9 @@ color: #333;
   padding: 15px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out; /* Add smooth zoom transition */
 }
 
 
@@ -79,6 +82,15 @@ color: #333;
   width: 100%;
   border-radius: 5px;
   margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out; /* Ensure smooth zoom transition on the image */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight zoom-in effect on card */
+}
+
+.card:hover img {
+  transform: scale(1.1); /* Zoom the image more when the card is hovered */
 }
 
 
