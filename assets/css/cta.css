@@ -13,6 +13,7 @@
     color: white;
     border-color: rgb(255, 255, 255);
     background-color: black;
+    border: solid 1px;
 }
 
 .cta > a > button:hover {
