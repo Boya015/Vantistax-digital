@@ -1,53 +1,153 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Russo+One&display=swap");
 
 .hero-banner {
-    background-image: url(/assets/img/Banner.webp);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-  }
-  
-  .hero-banner > h2 {
-    font-family: "Josefin Sans", serif;
-    font-weight: 700;
-    font-style: normal;
-    color: white;
+  background-image: url(/assets/img/Banner.webp);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.hero-banner > h2 {
+  font-family: "Josefin Sans", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+}
+
+nav ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.hero-banner > ol > li {
+  margin-right: 10px;
+}
+
+ul li {
+  list-style: none; /* Removes bullet points */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  text-align: center;
+}
+
+nav ol li a {
+  font-family: "Russo One", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: rgb(151, 145, 145);
+}
+
+nav ol li::after {
+  content: "/";
+  margin-left: 10px;
+}
+
+nav ol li:last-child::after {
+  content: ""; /* Remove the arrow from the last breadcrumb */
+}
+
+.details-box {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.details-box h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.details-box p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.details-box p:last-child {
+  margin-bottom: 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.contact-details .details-box {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details h5 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.contact-details p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+  .hero-banner {
+    padding: 100px;
   }
 
-  
-nav ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+  .hero-banner > h2 {
+    font-size: 40px;
   }
-  
-  .hero-banner > ol > li {
-    margin-right: 10px;
-  }
-  
-  ul li {
-    list-style: none; /* Removes bullet points */
-    padding: 0; /* Removes default padding */
-    margin: 0; /* Removes default margin */
-    text-align: center;
-  }
-  
-  nav ol li a {
-    font-family: "Russo One", serif;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    color: rgb(151, 145, 145);
-  }
-  
-  nav ol li::after {
-    content: "/";
-    margin-left: 10px;
-  }
-  
-  nav ol li:last-child::after {
-    content: ""; /* Remove the arrow from the last breadcrumb */
+
+  .hero-banner nav {
+    position: absolute;
+    top: 375px;
+    right: 133px; /* Adjust spacing from the right */
   }
 
   .contact-container {
@@ -55,142 +155,53 @@ nav ol {
     margin: 0 auto;
     padding: 40px;
   }
-  
+
   .contact-title {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 30px;
     color: #333;
   }
-  
+
   .contact-row {
     display: flex;
     justify-content: space-between;
     gap: 30px;
   }
-  
-  .contact-form, .contact-details {
+
+  .contact-form,
+  .contact-details {
     width: 48%;
   }
 
   .contact-details {
     margin-top: 21px;
   }
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    padding: 30px;
+    text-align: center;
+  }
+
+  nav ol {
+    justify-content: center;
+    font-size: small;
+  }
+
+.contact-title {
+  text-align: center;
+}
+
   .details-box {
-    padding: 20px;
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-  }
-  
-  .details-box h5 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #333;
-  }
-  
-  .details-box p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 12px;
-  }
-  
-  .details-box p:last-child {
-    margin-bottom: 0;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    font-size: 1rem;
-    margin-bottom: 5px;
-  }
-  
-  .form-input,
-  .form-textarea {
-    width: 100%;
-    padding: 12px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-sizing: border-box;
-  }
-  
-  .form-textarea {
-    resize: vertical;
-  }
-  
-  .submit-btn {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    background-color: #007bff;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .submit-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .contact-details .details-box {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact-details h5 {
-    margin-top: 0;
-    font-size: 1.2rem;
-  }
-  
-  .contact-details p {
-    font-size: 1rem;
-    margin: 10px 0;
+    padding: 15px;
   }
 
-  @media (min-width: 768px) {
-    .hero-banner {
-        padding: 100px;
-      }
-    
-      .hero-banner > h2 {
-        font-size: 40px;
-      }
-    
-      .hero-banner nav {
-        position: absolute;
-        top: 375px;
-        right: 133px; /* Adjust spacing from the right */
-      }
+  .contact-row {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
   }
-
-  @media (max-width: 768px) {
-    .hero-banner {
-        padding: 30px;
-        text-align: center;
-      }
-    
-      nav ol {
-        justify-content: center;
-        font-size: small;
-      }
-
-      .details-box {
-        padding: 15px;
-        width: 100%;
-      }
-  }
+}
