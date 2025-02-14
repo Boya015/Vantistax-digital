@@ -37,3 +37,6 @@
 2025-02-12 15:23:21 - Sending email to: blackelephantholdingsza@gmail.com
 2025-02-12 15:23:25 - Email sent successfully.
 2025-02-12 15:24:42 - Invalid request method: 
+2025-02-12 17:38:15 - SMTP configuration set. Host: smtp.gmail.com, Port: 587
+2025-02-12 17:38:15 - Sending email to: blackelephantholdingsza@gmail.com
+2025-02-12 17:38:20 - Email sent successfully.
